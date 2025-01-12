@@ -13,8 +13,7 @@ import re
 # MongoDB Connection
 username = "shubhangipawar486"
 password = "TzCEUP39JxmPFA23"
-connection_string = f"mongodb+srv://shubhangipawar486:TzCEUP39JxmPFA23@cluster0.ywtay.mongodb.net/"
-
+connection_string = f"mongodb+srv://{username}:{password}@cluster0.uu8yq.mongodb.net/?retryWrites=true&w=majority"
 def connect_to_mongo():
     try:
         client = MongoClient(connection_string)

@@ -26,8 +26,7 @@ def admin_dashboard(db):
 
     username = "shubhangipawar486"
     password = "TzCEUP39JxmPFA23"
-    connection_string = f"mongodb+srv://shubhangipawar486:TzCEUP39JxmPFA23@cluster0.ywtay.mongodb.net/"
-    
+    connection_string = f"mongodb+srv://{username}:{password}@cluster0.uu8yq.mongodb.net/?retryWrites=true&w=majority"    
     # Connect to MongoDB
     client = MongoClient(connection_string)
     db = client["JavaFileAnalysis"]  # Replace with your actual database name
