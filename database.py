@@ -3,8 +3,7 @@ from pymongo import MongoClient
 # Replace with your MongoDB Atlas connection string
 username = "shubhangipawar486"
 password = "TzCEUP39JxmPFA23"
-connection_string = f"mongodb+srv://{username}:{password}@cluster0.uu8yq.mongodb.net/?retryWrites=true&w=majority"
-
+connection_string = f"mongodb+srv://shubhangipawar486:TzCEUP39JxmPFA23@cluster0.ywtay.mongodb.net/"
 
 # Initialize MongoDB client
 client = MongoClient(connection_string)
@@ -24,3 +23,4 @@ for db_name, collections in databases_and_collections.items():
         print(f"Created collection '{collection_name}' in database '{db_name}'.")
 
 print("All databases and collections have been created successfully.")
+db.create_collection("JavaFileAnalysis")
